@@ -126,3 +126,7 @@ h5 {
 .about {
   margin-top: 20px;
 }
+
+.links h5 {
+  color: white;
+}

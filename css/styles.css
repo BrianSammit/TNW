@@ -30,13 +30,16 @@ nav {
   height: 48px;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
 }
 
 .logo img {
+  position: fixed;
   width: 106px;
   height: 48px;
   padding: 16px 20px;
-  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  color: white;
+  z-index: 30;
 }
 
 .nav-message {
@@ -60,6 +63,9 @@ nav {
     header
 ========================================
 */
+main {
+  height: 10000px;
+}
 
 .cover-story {
   margin: auto;
@@ -71,7 +77,6 @@ nav {
   background-color: rgb(0, 0, 0);
   background-size: cover;
   background-position: 50%;
-  z-index: 1;
 }
 
 .inner {
@@ -80,7 +85,6 @@ nav {
   padding: 14px 12px;
   position: absolute;
   right: 4px;
-  z-index: 3;
 }
 
 .img-info {
@@ -105,7 +109,7 @@ nav {
   text-decoration: none;
 }
 
-.cover-story:before {
+.cover-story::before {
   content: "";
   position: absolute;
   top: 0;
@@ -136,3 +140,89 @@ h3 {
                       img section
 ===========================================================
 */
+
+.wrapper {
+  margin-top: 150px;
+}
+
+.wrapper h4 {
+  color: orangered;
+  font-size: 28px;
+  margin: 100px 0 15px 20px;
+}
+
+.wrapper ul {
+  list-style: none;
+}
+
+.big-li {
+  width: 385px;
+  height: 72px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.wrapper img {
+  width: 80px;
+  height: 70px;
+  padding-right: 10px;
+}
+
+.container-latest-img {
+  margin-right: 10px;
+  float: left;
+  width: 72px;
+  height: 72px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.img-1 {
+  background-image: url(../img/ibm.jpg);
+}
+
+.img-2 {
+  background-image: url(../img/uber.jpg);
+}
+
+.img-3 {
+  background-image: url(../img/mozilla.png);
+}
+
+.img-4 {
+  background-image: url(../img/Mi.jpg);
+}
+
+.img-5 {
+  background-image: url(../img/lucid.jpg);
+}
+
+.img-6 {
+  background-image: url(../img/google.png);
+}
+
+.img-7 {
+  background-image: url(../img/corona.gif);
+}
+
+.img-8 {
+  background-image: url(../img/ban.jpg);
+}
+
+.info-latest {
+  margin-left: 10px;
+}
+
+h5 {
+  font-size: 14px;
+  color: black;
+}
+
+.container-latest li {
+  font-size: 12px;
+}
+
+.container-latest a {
+  color: #aaaa;
+  text-decoration: none;
+}
