@@ -84,10 +84,16 @@ nav {
 }
 
 .img-info {
+  color: white;
   display: flex;
   list-style: none;
   font-size: 12px;
   line-height: 16px;
+}
+
+.space {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .cover-story span {
@@ -99,8 +105,18 @@ nav {
   text-decoration: none;
 }
 
+.cover-story:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .article-1 {
-  background-image: url(../img/weed.jpg);
+  background-image: url(../img/Amazon.jpg);
 }
 
 .article-2 {
@@ -108,7 +124,7 @@ nav {
 }
 
 .article-3 {
-  background-image: url(../img/weed.jpg);
+  background-image: url(../img/robot.jpg);
 }
 
 /*
