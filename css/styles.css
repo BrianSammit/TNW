@@ -62,24 +62,47 @@ nav {
 
 .cover-story {
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   position: relative;
   top: 108px;
   width: 96%;
-  height: 125px;
+  height: 160px;
   background-color: rgb(0, 0, 0);
   background-size: cover;
   background-position: 50%;
 }
 
+.inner {
+  bottom: 4px;
+    left: 4px;
+    padding: 14px 12px;
+    position: absolute;
+    right: 4px;
+    z-index: 3;
+}
+
+.img-info {
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .article-1 {
-  background-image: url(../img/robot.jpg);
+  background-image: url(../img/weed.jpg);
 }
 
 .article-2 {
-  background-image: url(../img/Amazon.jpg);
+  background-image: url(../img/weed.jpg);
 }
 
 .article-3 {
   background-image: url(../img/weed.jpg);
 }
+
+/*
+===========================================================
+                      img section
+===========================================================
+*/
+
