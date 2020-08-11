@@ -19,6 +19,7 @@ nav {
   height: 48px;
   justify-content: space-between;
   position: fixed;
+  z-index: 10;
 }
 
 .logo {
@@ -86,12 +87,26 @@ nav {
 ========================================
 */
 
-.article {
+.cover-story {
   margin: auto;
   margin-bottom: 10px;
   position: relative;
   top: 108px;
   width: 96%;
   height: 125px;
-  background-color: red;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.article-1 {
+  background-image: url(../img/robot.jpg);
+}
+
+.article-2 {
+  background-image: url(../img/Amazon.jpg);
+}
+
+.article-3 {
+  background-image: url(../img/weed.jpg);
 }
