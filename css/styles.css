@@ -21,6 +21,7 @@ nav {
   height: 48px;
   justify-content: space-between;
   position: fixed;
+  background-color: white;
   z-index: 20;
 }
 
@@ -70,15 +71,16 @@ nav {
   background-color: rgb(0, 0, 0);
   background-size: cover;
   background-position: 50%;
+  z-index: 1;
 }
 
 .inner {
   bottom: 4px;
-    left: 4px;
-    padding: 14px 12px;
-    position: absolute;
-    right: 4px;
-    z-index: 3;
+  left: 4px;
+  padding: 14px 12px;
+  position: absolute;
+  right: 4px;
+  z-index: 3;
 }
 
 .img-info {
@@ -86,6 +88,15 @@ nav {
   list-style: none;
   font-size: 12px;
   line-height: 16px;
+}
+
+.cover-story span {
+  color: white;
+}
+
+.cover-story a {
+  color: white;
+  text-decoration: none;
 }
 
 .article-1 {
@@ -105,4 +116,3 @@ nav {
                       img section
 ===========================================================
 */
-
