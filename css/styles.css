@@ -84,10 +84,17 @@ nav {
 }
 
 .img-info {
+  color: white;
   display: flex;
   list-style: none;
   font-size: 12px;
   line-height: 16px;
+  
+}
+
+.space {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .cover-story span {
