@@ -1,3 +1,5 @@
+@import url(menu.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +21,7 @@ nav {
   height: 48px;
   justify-content: space-between;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
 }
 
 .logo {
@@ -34,35 +36,6 @@ nav {
   height: 48px;
   padding: 16px 20px;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
-}
-
-.nav-icons {
-  position: absolute;
-  right: 0;
-}
-
-.nav-icons ul {
-  list-style: none;
-}
-
-.nav-icons li {
-  height: 48px;
-  border-left: 0.5px solid rgb(230, 230, 230);
-}
-
-.fas {
-  width: 48px;
-  height: 48px;
-  font-size: 20px;
-  padding: 16px;
-}
-
-.fa-search {
-  color: rgb(192, 192, 192);
-}
-
-.fa-bars {
-  color: orangered;
 }
 
 .nav-message {
