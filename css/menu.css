@@ -2,6 +2,10 @@
   display: none;
 }
 
+#menu-bar-1 {
+  display: none;
+}
+
 .nav-icons {
   position: absolute;
   right: 0;

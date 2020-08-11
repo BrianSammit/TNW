@@ -115,6 +115,10 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+h3 {
+  font-size: 20px;
+}
+
 .article-1 {
   background-image: url(../img/Amazon.jpg);
 }
