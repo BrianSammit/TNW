@@ -539,3 +539,77 @@ h5 {
 .article-img-9 {
   background-image: url(../img/Mulan.jpg);
 }
+
+/*
+========================================================
+    section deals
+========================================================
+*/
+
+.title-latest {
+  width: 385px;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.latest-deals h4 {
+  margin: 0;
+}
+
+.latest-deals h2 a {
+  text-decoration: none;
+  font-size: 14px;
+  color: orangered;
+}
+
+.latest-deals ul {
+  list-style: none;
+}
+
+.latest-deals-img-1 {
+  background-image: url(../img/sale.jpg);
+}
+
+.latest-deals-img-2 {
+  background-image: url(../img/sale-1.jpg);
+}
+
+.latest-deals-img-3 {
+  background-image: url(../img/sale-2.jpg);
+}
+
+.latest-deals-img-4 {
+  background-image: url(../img/sale-3.jpg);
+}
+
+.latest-deals-img-5 {
+  background-image: url(../img/sale-4.jpg);
+}
+
+.latest-deals-img-6 {
+  background-image: url(../img/product.jpg);
+}
+
+.latest-deals-img-7 {
+  background-image: url(../img/sale-5.jpg);
+}
+
+.latest-deals-img-8 {
+  background-image: url(../img/sale-6.jpg);
+}
+
+.deals-ul li {
+  padding: 10px 5px 0 0;
+}
+
+.container-latest .ul-a-1 {
+  color: #555;
+  font-size: 14px;
+}
+
+.container-latest .ul-a {
+  color: #aaa;
+  font-size: 12px;
+  text-decoration: line-through;
+}
