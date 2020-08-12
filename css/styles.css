@@ -63,9 +63,6 @@ nav {
     header
 ========================================
 */
-main {
-  height: 10000px;
-}
 
 .cover-story {
   margin: auto;
@@ -333,6 +330,14 @@ h5 {
   padding: 5px 0;
 }
 
+.legal-footer span {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 385px;
+  height: 19px;
+  color: #aaa;
+  font-size: 14px;
+}
+
 .sell p {
   padding: 10px 16px 16px;
 }
@@ -342,6 +347,23 @@ h5 {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.6);
   padding-right: 5px;
+}
+
+.icons-ul-footer a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 3px;
+  font-size: 16px;
+}
+
+.links-ul a {
+  font-size: 13px;
+  color: #aaa;
+  padding: 5px;
+  text-decoration: none;
 }
 
 .sell p a {
@@ -612,4 +634,59 @@ h5 {
   color: #aaa;
   font-size: 12px;
   text-decoration: line-through;
+}
+
+.pizza-img {
+  width: 90%;
+  height: 90px;
+  margin: 30px auto;
+  background-image: url(../img/pizza.png);
+  cursor: pointer;
+}
+
+/*
+========================================================
+    Footer
+========================================================
+*/
+
+.icons-wrapper {
+  width: 100%;
+  height: 161px;
+  padding: 35px 0;
+  background-color: rgb(19, 19, 19);
+}
+
+.icons-footer {
+  width: 100%;
+  height: 91px;
+  padding: 0 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-footer ul {
+  list-style: none;
+}
+
+.icons-ul-footer {
+  margin-bottom: 41px;
+}
+
+.legal-footer {
+  width: 100%;
+  height: 121px;
+  padding: 32px 0;
+  background-color: black;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 10px;
+}
+
+.legal-footer img {
+  height: 9px;
 }
