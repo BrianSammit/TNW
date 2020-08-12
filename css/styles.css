@@ -137,7 +137,7 @@ h3 {
 
 /*
 ===========================================================
-                      img section
+      section latest news
 ===========================================================
 */
 
@@ -145,7 +145,7 @@ h3 {
   margin-top: 150px;
 }
 
-.wrapper h4 {
+h4 {
   color: orangered;
   font-size: 28px;
   margin: 100px 0 15px 20px;
@@ -225,4 +225,115 @@ h5 {
 .container-latest a {
   color: #aaaa;
   text-decoration: none;
+}
+
+.deals a {
+  color: orangered;
+  text-decoration: none;
+  display: block;
+  margin: 10px 20px;
+}
+
+/*
+===========================================================
+      section sells
+===========================================================
+*/
+
+.sell {
+  position: relative;
+  width: 393px;
+  height: 230px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.sell a {
+  text-decoration: none;
+}
+
+.glove {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.v {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.pay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.sell h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 10px 16px 10px 84px;
+  background-color: orangered;
+}
+
+.sell .price {
+  background-color: rgba(255, 68, 34, 0.08);
+}
+
+.sell .price-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: black;
+  padding: 10px 16px 5px 84px;
+}
+
+.sell .series {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0 16px 10px 84px;
+}
+
+.investment {
+  flex-direction: column;
+  width: 100%;
+  height: 82px;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 68, 0, 0.4);
+}
+
+.investment a {
+  padding: 5px 0;
+}
+
+.investment span {
+  padding: 10px;
+  color: #555;
+  font-size: 13px;
+}
+
+.fas {
+  font-size: 16px;
+  color: black;
+}
+
+.sell p {
+  padding: 10px 16px 16px;
+}
+
+.sell p a {
+  font-size: 12px;
+  color: #555;
+}
+
+.sell p a span {
+  color: #aaa;
 }
