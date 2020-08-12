@@ -325,8 +325,23 @@ h5 {
   color: black;
 }
 
+.head-line a {
+  width: 100%;
+  height: 50px;
+  font-size: 13px;
+  color: #555;
+  padding: 5px 0;
+}
+
 .sell p {
   padding: 10px 16px 16px;
+}
+
+.img-info a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  padding-right: 5px;
 }
 
 .sell p a {
@@ -340,6 +355,187 @@ h5 {
 
 /*
 ========================================================
-                      LATEST
+    section popular
 ========================================================
 */
+
+.fork {
+  width: 400px;
+  height: 703px;
+  padding: 8px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.fork ul {
+  list-style: none;
+}
+
+.fork h2 {
+  padding-bottom: 20px;
+}
+
+.fork h2 a {
+  text-decoration: none;
+  color: orangered;
+  font-size: 28px;
+}
+
+.popular::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popular {
+  position: relative;
+  width: 385px;
+  height: 288px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popular-header {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  padding: 14px;
+}
+
+.popular-header h5 {
+  font-size: 13px;
+  color: white;
+}
+
+.popular-header h3 a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.img-info li {
+  padding-top: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.article-latest {
+  position: relative;
+}
+
+.header-article {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 68, 34, 0.06);
+  width: 80%;
+  height: 96px;
+  color: orangered;
+  padding: 15px;
+}
+
+.header-article h2 {
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.header-article h3 {
+  font-size: 14px;
+}
+
+.article-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 96px;
+  height: 96px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.head-line h4 {
+  margin: 0;
+}
+
+.head-line {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: disc;
+  color: orangered;
+  line-height: 15px;
+  margin-left: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 0 6px 14px;
+}
+
+.popular-img-1 {
+  background-image: url(../img/bitcoin.jpg);
+}
+
+.article-img-1 {
+  background-image: url(../img/bitcoin.jpg);
+}
+
+.popular-img-2 {
+  background-image: url(../img/google.png);
+}
+
+.article-img-2 {
+  background-image: url(../img/twitter.png);
+}
+
+.popular-img-3 {
+  background-image: url(../img/Ariel.jpg);
+}
+
+.article-img-3 {
+  background-image: url(../img/Mi.jpg);
+}
+
+.popular-img-4 {
+  background-image: url(../img/ibm.jpg);
+}
+
+.article-img-4 {
+  background-image: url(../img/design.jpg);
+}
+
+.popular-img-5 {
+  background-image: url(../img/handshake.png);
+}
+
+.article-img-5 {
+  background-image: url(../img/a-female.jpg);
+}
+
+.popular-img-6 {
+  background-image: url(../img/mens.jpg);
+}
+
+.article-img-6 {
+  background-image: url(../img/Featured.jpg);
+}
+
+.article-img-7 {
+  background-image: url(../img/new-zealand.jpg);
+}
+
+.popular-img-8 {
+  background-image: url(../img/Shift.png);
+}
+
+.article-img-8 {
+  background-image: url(../img/BMW.png);
+}
+
+.popular-img-9 {
+  background-image: url(../img/Screenshot.png);
+}
+
+.article-img-9 {
+  background-image: url(../img/Mulan.jpg);
+}
