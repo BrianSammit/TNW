@@ -210,6 +210,10 @@ h5 {
     flex-direction: row;
   }
 
+  .link-2-1 a {
+    margin-left: 5px;
+  }
+
   .links-2 ul {
     flex-direction: row-reverse;
     display: flex;
