@@ -32,7 +32,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
   transition: all 0.5s;
   transform: translateX(+100%);
@@ -42,15 +42,21 @@
   transform: translateX(0%);
 }
 
+.icon-cancel-div {
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .icon-cancel {
   position: fixed;
-  right: 0;
+  right: 10px;
   height: 50px;
-  width: 100%;
+  width: 10%;
   font-size: 30px;
-  padding: 10px 0 10px 380px;
+  margin: 10px 0;
   color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #menu-bar:checked ~ .icon-cancel {

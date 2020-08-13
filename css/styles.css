@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
 .flex {
   display: flex;
 }
@@ -18,7 +23,7 @@
 
 nav {
   width: 100%;
-  height: 48px;
+  height: 5rem;
   justify-content: space-between;
   position: fixed;
   background-color: white;
@@ -26,7 +31,7 @@ nav {
 }
 
 .logo {
-  width: 106px;
+  width: 10.6rem;
   height: 48px;
   justify-content: center;
   align-items: center;
@@ -35,7 +40,7 @@ nav {
 
 .logo img {
   position: fixed;
-  width: 106px;
+  width: 10.6rem;
   height: 48px;
   padding: 16px 20px;
   color: white;
@@ -51,10 +56,8 @@ nav {
   background-color: rgb(255, 221, 51);
   width: 100%;
   height: 60px;
-  padding: 0 6px;
-  line-height: 60px;
-  align-items: center;
-  justify-content: center;
+  padding: 20px 50px;
+  line-height: 15px;
   color: black;
 }
 
@@ -63,6 +66,12 @@ nav {
     header
 ========================================
 */
+
+.cover {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
 
 .cover-story {
   margin: auto;
@@ -139,13 +148,14 @@ h3 {
 */
 
 .wrapper {
+  width: 100%;
   margin-top: 150px;
 }
 
 h4 {
   color: orangered;
   font-size: 28px;
-  margin: 100px 0 15px 20px;
+  margin: 110px 0 15px 20px;
 }
 
 .wrapper ul {
@@ -153,10 +163,10 @@ h4 {
 }
 
 .big-li {
-  width: 385px;
+  width: 100%;
   height: 72px;
   margin: auto;
-  margin-top: 20px;
+  margin: 20px 5px 0 5px;
 }
 
 .wrapper img {
@@ -239,7 +249,7 @@ h5 {
 
 .sell {
   position: relative;
-  width: 393px;
+  width: 90%;
   height: 230px;
   margin: auto;
   margin-top: 20px;
@@ -382,7 +392,7 @@ h5 {
 */
 
 .fork {
-  width: 400px;
+  width: 100%;
   height: 703px;
   padding: 8px;
   margin: auto;
@@ -415,7 +425,7 @@ h5 {
 
 .popular {
   position: relative;
-  width: 385px;
+  width: 100%;
   height: 288px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -449,6 +459,7 @@ h5 {
 
 .article-latest {
   position: relative;
+  width: 100%;
 }
 
 .header-article {
@@ -569,14 +580,19 @@ h5 {
 */
 
 .title-latest {
-  width: 385px;
+  width: 100%;
   margin: auto;
   margin-top: 50px;
   justify-content: space-between;
 }
 
+.latest-deals {
+  width: 100%;
+}
+
 .latest-deals h4 {
   margin: 0;
+  width: 100%;
 }
 
 .latest-deals h2 a {
@@ -650,6 +666,10 @@ h5 {
 ========================================================
 */
 
+footer {
+  width: 100%;
+}
+
 .icons-wrapper {
   width: 100%;
   height: 161px;
@@ -671,7 +691,13 @@ h5 {
 }
 
 .icons-ul-footer {
+  text-align: center;
   margin-bottom: 41px;
+}
+
+.icons-ul-footer li {
+  display: inline;
+  line-height: 35px;
 }
 
 .legal-footer {
@@ -689,4 +715,21 @@ h5 {
 
 .legal-footer img {
   height: 9px;
+}
+
+.disabled {
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 60;
+}
+
+.links-ul {
+  text-align: center;
+}
+
+.links-ul li {
+  display: inline;
+  text-align: center;
 }
