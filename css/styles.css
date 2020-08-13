@@ -287,7 +287,7 @@ h5 {
 
 /*
 ========================================
-    latest news size tablet 
+    latest news size tablet
 ========================================
 */
 
@@ -312,6 +312,7 @@ h5 {
     height: 114px;
   }
 }
+
 /*
 ===========================================================
       section sells
@@ -457,10 +458,36 @@ h5 {
 }
 
 /*
+===========================================================
+      section sells size tablet
+===========================================================
+*/
+
+@media (min-width: 768px) {
+  .sells {
+    display: flex;
+  }
+
+  .sell {
+    display: flex;
+    flex-wrap: wrap;
+    width: 229px;
+  }
+
+  .sell a {
+    width: 100%;
+  }
+}
+
+/*
 ========================================================
     section popular
 ========================================================
 */
+
+.fork-div {
+  margin-top: 80px;
+}
 
 .fork {
   width: 100%;
@@ -642,6 +669,23 @@ h5 {
 
 .article-img-9 {
   background-image: url(../img/Mulan.jpg);
+}
+
+/*
+========================================================
+    section popular size tablet
+========================================================
+*/
+
+@media (min-width: 768px) {
+  .fork-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fork {
+    width: 374px;
+  }
 }
 
 /*
