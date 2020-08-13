@@ -767,14 +767,6 @@ h5 {
   text-decoration: line-through;
 }
 
-.pizza-img {
-  width: 90%;
-  height: 90px;
-  margin: 30px auto;
-  background-image: url(../img/pizza.png);
-  cursor: pointer;
-}
-
 /*
 ========================================================
     section deals size tablet
@@ -790,7 +782,7 @@ h5 {
   .big-li {
     width: 229px;
     height: 248px;
-    margin-bottom: 10px;
+    margin: 0 12px 10px;
   }
 
   .container-latest-img {
@@ -817,6 +809,7 @@ h5 {
 
 footer {
   width: 100%;
+  margin-top: 50px;
 }
 
 .icons-wrapper {
@@ -881,4 +874,17 @@ footer {
 .links-ul li {
   display: inline;
   text-align: center;
+}
+
+/*
+========================================================
+    Footer size tablet
+========================================================
+*/
+
+@media (min-width: 768px) {
+  .legal-footer {
+    display: inline-block;
+    height: auto;
+  }
 }
