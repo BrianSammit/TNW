@@ -1,3 +1,9 @@
+/*
+========================================================
+    menu size movile
+========================================================
+*/
+
 #menu-bar {
   display: none;
 }
@@ -6,8 +12,11 @@
   display: none;
 }
 
+nav {
+  position: fixed;
+}
+
 .nav-icons {
-  position: absolute;
   right: 0;
   top: 0;
 }
@@ -65,8 +74,8 @@
 
 .icons {
   height: 55px;
+  padding: 5px 10px 0;
   margin-top: 10px;
-  align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -135,4 +144,82 @@ h5 {
 
 .links h5 {
   color: white;
+}
+
+.li-display {
+  display: none;
+}
+
+/*
+========================================================
+    menu size tablet
+========================================================
+*/
+
+@media (min-width: 768px) {
+  .menu {
+    width: 100vw;
+    height: 32px;
+    transform: translateX(0);
+    background-image: none;
+    background-color: #c09;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .icon-cancel-div,
+  .icons {
+    display: none;
+  }
+
+  .li-display {
+    display: inline;
+  }
+
+  .links-1 {
+    width: 500px;
+    height: 53px;
+    position: absolute;
+    left: 106px;
+    margin-top: 32px;
+    padding-top: 15px;
+  }
+
+  .links-1 h5,
+  .li-none {
+    display: none;
+  }
+
+  .links-1 ul {
+    display: flex;
+  }
+
+  .links-1 a {
+    color: #aaa;
+  }
+
+  .link-2-1 {
+    background-color: #131313;
+    width: 100%;
+    padding: 0;
+    height: 32px;
+    margin-left: 106px;
+    position: absolute;
+    flex-direction: row;
+  }
+
+  .links-2 ul {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+
+  .link-about ul {
+    flex-direction: row;
+  }
+
+  .links-2 h5 {
+    display: none;
+  }
 }
