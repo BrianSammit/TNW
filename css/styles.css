@@ -154,6 +154,31 @@ h3 {
   background-image: url(../img/robot.jpg);
 }
 
+@media(min-width: 768px)
+{
+  .cover {
+    flex-direction: row;
+  }
+
+  .article-1 {
+    width: 70%;
+    height: 314px;
+  }
+  
+  .article-aside {
+    width: 30%;
+    height: 306px;
+  }
+
+  .article-2 h3{
+    font-size: medium;
+  }
+
+  .article-2 .img-info{
+    display: none;
+  }
+}
+
 /*
 ===========================================================
       section latest news
