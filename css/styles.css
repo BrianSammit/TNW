@@ -685,6 +685,7 @@ h5 {
 
   .fork {
     width: 374px;
+    margin-left: 0;
   }
 }
 
@@ -707,7 +708,6 @@ h5 {
 
 .latest-deals h4 {
   margin: 0;
-  width: 100%;
 }
 
 .latest-deals h2 a {
@@ -773,6 +773,40 @@ h5 {
   margin: 30px auto;
   background-image: url(../img/pizza.png);
   cursor: pointer;
+}
+
+/*
+========================================================
+    section deals size tablet
+========================================================
+*/
+
+@media (min-width: 768px) {
+  .latest-deals ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .big-li {
+    width: 229px;
+    height: 248px;
+    margin-bottom: 10px;
+  }
+
+  .container-latest-img {
+    width: 100%;
+    height: 170px;
+  }
+
+  .deals-ul {
+    display: flex;
+    height: 20px;
+  }
+
+  .title-latest {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
 /*
