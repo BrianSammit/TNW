@@ -73,6 +73,25 @@ nav {
   .nav-message {
     top: 85px;
   }
+
+  .links-2 {
+    display: none;
+  }
+
+  .link-3 ul{
+    display:flex;
+  }
+
+  .link-3-1 {
+    display:flex;
+    justify-content: space-between;
+    width :100%;
+  }
+
+  .list-right {
+    position :absolute;
+    right:15px;
+  }
 }
 
 /*

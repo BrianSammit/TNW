@@ -227,3 +227,25 @@ h5 {
     display: none;
   }
 }
+
+
+@media (min-width: 1440px) {
+  .nav-icons .icon-search {
+    display: none;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .links-1 {
+    
+    position: absolute;
+    left:0%;
+  }
+
+  .link-2-1{
+    margin: 0;
+    padding-left: 15px;
+  }
+}
