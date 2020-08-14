@@ -268,7 +268,7 @@ h3 {
     padding: 0%;
     margin: 0%;
     width: 30%;
-    height: 100%;
+    height: 97%;
   }
 
   .article-1 {
@@ -434,14 +434,13 @@ h5 {
     flex-wrap: wrap;
   }
 
+  .wrapper li {
+    width: 30%;
+  }
+
   .container-latest {
     display: flex;
     flex-direction: column;
-  }
-
-  .big-li {
-    width: 229px;
-    height: 199px;
   }
 
   .container-latest-img {
@@ -456,6 +455,10 @@ h5 {
 ========================================
 */
 @media (min-width: 1024px) {
+  .wrapper li {
+    width: 22%;
+  }
+
   .deals div {
     display: flex;
     align-items: center;
@@ -498,7 +501,12 @@ h5 {
 ===========================================================
 */
 .sell-none {
-  display: none;
+  visibility: hidden;
+}
+
+.sells {
+  width: 100%;
+  height: 700px;
 }
 
 .sell {
@@ -627,8 +635,13 @@ h5 {
 */
 
 @media (min-width: 768px) {
+  .sell-none {
+    visibility: hidden;
+  }
+
   .sells {
     display: flex;
+    height: 200px;
   }
 
   .sell {
@@ -651,18 +664,36 @@ h5 {
 
 @media (min-width: 768px) {
   .sell-none {
-    display: none;
+    visibility: hidden;
+  }
+
+  .sells {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .sell {
-    display: flex;
-    flex-wrap: wrap;
-    width: 277px;
-    margin: 0 0 0 10px;
+    width: 31%;
   }
 
   .sell a {
     width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sells {
+    margin-top: 30px;
+  }
+
+  .sell {
+    width: 24%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sell-none {
+    visibility: visible;
   }
 }
 
@@ -871,17 +902,17 @@ h5 {
   }
 
   .fork {
-    width: 374px;
+    width: 50%;
     margin: 0;
   }
 
   .fork div {
-    width: 320px;
+    width: 100%;
   }
 
   .article-latest div {
-    width: 96px;
-    height: 96px;
+    width: 30%;
+    height: 100%;
   }
 
   .header-article {
@@ -889,7 +920,7 @@ h5 {
   }
 
   .article-latest {
-    width: 320px;
+    width: 100%;
   }
 }
 
@@ -942,8 +973,7 @@ h5 {
 
 .title-latest {
   width: 100%;
-  margin: auto;
-  margin-top: 50px;
+  padding: 50px 1% 0 1%;
   justify-content: space-between;
 }
 
@@ -1026,7 +1056,7 @@ h5 {
   }
 
   .big-li {
-    width: 229px;
+    width: 30%;
     height: 248px;
     margin: 0 12px 10px;
   }
@@ -1042,8 +1072,7 @@ h5 {
   }
 
   .title-latest {
-    width: 100%;
-    padding: 0 10px;
+    width: 98%;
   }
 }
 
@@ -1056,7 +1085,7 @@ h5 {
 @media (min-width: 1024px) {
   .title-latest {
     width: 100%;
-    margin: 0;
+    padding-right: 5%;
   }
 }
 
