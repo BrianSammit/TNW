@@ -2,6 +2,8 @@
 The project consists of creating a responsive website of The Next Web that changes the position and size of the items and images using media query to resize the items.
 
 ![screenshot](./screenshot.png)
+![screenshot](./screenshot-1.png)
+![screenshot](./screenshot-2.png)
 
 ## Built With
 
@@ -12,7 +14,7 @@ The project consists of creating a responsive website of The Next Web that chang
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/BrianSammit/TNW/4e6e3afd4c3e245788d764e2280d0d5065d61d58/index.html)
+[Live Demo Link](https://rawcdn.githack.com/BrianSammit/TNW/e576cd56dd58f8b8cb904cb9729af224e2c9c78d/index.html)
 
 ## Authors
 
