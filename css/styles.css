@@ -116,6 +116,14 @@ nav {
 ========================================
 */
 
+.logo-article {
+  visibility: hidden;
+}
+
+.logo-1 {
+  display: none;
+}
+
 .cover {
   width: 100%;
   height: auto;
@@ -129,7 +137,6 @@ nav {
   position: relative;
   width: 96%;
   height: 155px;
-  background-color: rgb(0, 0, 0);
   background-size: cover;
   background-position: 50%;
 }
@@ -202,6 +209,10 @@ h3 {
 */
 
 @media (min-width: 768px) {
+  .logo-1 {
+    display: none;
+  }
+
   .cover {
     width: 100%;
     flex-direction: row;
@@ -279,6 +290,36 @@ h3 {
 
   .img-info {
     font-size: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo-article {
+    visibility: visible;
+  }
+
+  .logo-back {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(170deg, #ff5100 40%, transparent 80%);
+    background-size: cover;
+  }
+
+  .logo-article img {
+    width: 50%;
+    color: white;
+    position: relative;
+    padding: 30px 20px;
+  }
+
+  .article-left {
+    position: relative;
+  }
+
+  .logo-1 img {
+    position: absolute;
+    top: 0;
+    background-color: lawngreen;
   }
 }
 
@@ -472,22 +513,8 @@ h5 {
   text-decoration: none;
 }
 
-.glove {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 60px;
-  height: 60px;
-}
-
-.v {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 60px;
-  height: 60px;
-}
-
+.glove,
+.v,
 .pay {
   position: absolute;
   top: 10px;
@@ -892,10 +919,7 @@ h5 {
     margin: 0 5px;
   }
 
-  .fork div {
-    width: 354px;
-  }
-
+  .fork div,
   .article-latest {
     width: 354px;
   }
