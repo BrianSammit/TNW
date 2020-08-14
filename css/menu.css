@@ -112,7 +112,6 @@ nav {
 
 .link-2-1 {
   flex-direction: column;
-  float: right;
   width: 50%;
   height: 100vh;
   padding: 20px;
@@ -228,24 +227,43 @@ h5 {
   }
 }
 
+/*
+========================================================
+    menu size 1440px
+========================================================
+*/
 
-@media (min-width: 1440px) {
-  .nav-icons .icon-search {
+@media (min-width: 1024px) {
+  .nav-icons {
     display: none;
   }
 
-  .logo{
+  .logo {
     display: none;
   }
 
   .links-1 {
-    
     position: absolute;
-    left:0%;
+    left: 0%;
   }
 
-  .link-2-1{
+  .link-2-1 {
     margin: 0;
     padding-left: 15px;
+  }
+
+  .link-3-1 {
+    width: 100%;
+    display: flex;
+  }
+
+  .list-right {
+    position: absolute;
+    right: 15px;
+  }
+
+  .icon-search {
+    position: absolute;
+    right: 0;
   }
 }

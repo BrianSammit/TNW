@@ -10,6 +10,13 @@
   display: flex;
 }
 
+@media (min-width: 1440px) {
+  main {
+    margin: auto;
+    width: 80%;
+  }
+}
+
 /*
 ========================================
     nav bar size movile
@@ -78,19 +85,28 @@ nav {
     display: none;
   }
 
-  .link-3 ul{
-    display:flex;
+  .link-3 ul {
+    display: flex;
   }
 
   .link-3-1 {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    width :100%;
+    width: 100%;
   }
+}
 
-  .list-right {
-    position :absolute;
-    right:15px;
+/*
+========================================
+    nav bar size desktop
+========================================
+*/
+
+@media (min-width: 1024px) {
+  .nav-message {
+    text-align: start;
+    height: 30px;
+    padding: 10px 20px;
   }
 }
 
@@ -162,6 +178,10 @@ h3 {
   font-size: 20px;
 }
 
+.fa-share-alt {
+  color: white;
+}
+
 .article-1 {
   background-image: url(../img/Amazon.jpg);
 }
@@ -206,6 +226,27 @@ h3 {
 }
 
 /*
+========================================
+    header size desktop
+========================================
+*/
+
+@media (min-width: 1024px) {
+  .cover {
+    height: 529px;
+  }
+
+  .cover-story {
+    height: 521px;
+  }
+
+  .article-2,
+  .article-3 {
+    height: 256px;
+  }
+}
+
+/*
 ===========================================================
       section latest news
 ===========================================================
@@ -226,7 +267,7 @@ h4 {
 }
 
 .big-li {
-  width: 100%;
+  width: 98%;
   height: 72px;
   margin: auto;
   margin: 20px 5px 0 5px;
@@ -333,10 +374,55 @@ h5 {
 }
 
 /*
+========================================
+    latest news size desktop
+========================================
+*/
+@media (min-width: 1024px) {
+  .deals div {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .deals a {
+    padding: 0 10px;
+    margin: 0;
+    border-left: 1px solid orangered;
+  }
+}
+
+@media (min-width: 1440px) {
+  .deals {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper li {
+    width: 270px;
+    height: 295px;
+    margin: 8px;
+  }
+
+  .container-latest {
+    height: auto;
+  }
+
+  .info-latest li {
+    height: auto;
+    width: auto;
+  }
+}
+
+/*
 ===========================================================
       section sells
 ===========================================================
 */
+.sell-none {
+  display: none;
+}
 
 .sell {
   position: relative;
@@ -418,11 +504,6 @@ h5 {
   font-size: 13px;
 }
 
-.fas {
-  font-size: 16px;
-  color: black;
-}
-
 .head-line a {
   width: 100%;
   height: 50px;
@@ -491,6 +572,30 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     width: 229px;
+    margin: 0 0 0 10px;
+  }
+
+  .sell a {
+    width: 100%;
+  }
+}
+
+/*
+===========================================================
+      section sells size desktop
+===========================================================
+*/
+
+@media (min-width: 768px) {
+  .sell-none {
+    display: none;
+  }
+
+  .sell {
+    display: flex;
+    flex-wrap: wrap;
+    width: 277px;
+    margin: 0 0 0 10px;
   }
 
   .sell a {
@@ -704,7 +809,68 @@ h5 {
 
   .fork {
     width: 374px;
-    margin-left: 0;
+    margin: 0;
+  }
+
+  .fork div {
+    width: 320px;
+  }
+
+  .article-latest div {
+    width: 96px;
+    height: 96px;
+  }
+
+  .header-article {
+    width: 230px;
+  }
+
+  .article-latest {
+    width: 320px;
+  }
+}
+
+/*
+========================================================
+    section popular size desktop
+========================================================
+*/
+
+@media (min-width: 1024px) {
+  .fork {
+    width: 336px;
+    height: auto;
+    margin: 0;
+  }
+
+  .popular {
+    width: 312px;
+    height: 234px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fork {
+    width: 370px;
+    height: auto;
+    margin: 0 5px;
+  }
+
+  .fork div {
+    width: 354px;
+  }
+
+  .article-latest {
+    width: 354px;
+  }
+
+  .article-latest div {
+    width: 96px;
+    height: 96px;
+  }
+
+  .article-latest header {
+    width: 255px;
   }
 }
 
@@ -723,6 +889,7 @@ h5 {
 
 .latest-deals {
   width: 100%;
+  margin-top: 30px;
 }
 
 .latest-deals h4 {
@@ -822,6 +989,31 @@ h5 {
 
 /*
 ========================================================
+    section deals size desktop
+========================================================
+*/
+
+@media (min-width: 1024px) {
+  .title-latest {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .latest-deals li {
+    width: 270px;
+    height: auto;
+    margin: 8px;
+  }
+
+  .deals-ul li {
+    width: auto;
+  }
+}
+
+/*
+========================================================
     Footer
 ========================================================
 */
@@ -905,5 +1097,16 @@ footer {
   .legal-footer {
     display: inline-block;
     height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .disabled {
+    background-color: #3b78bd;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
   }
 }
