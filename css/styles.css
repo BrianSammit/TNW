@@ -135,9 +135,10 @@ nav {
 }
 
 .inner {
+  font-family: sans-serif;
   bottom: 4px;
   left: 4px;
-  padding: 14px 12px;
+  padding: 14px 8px;
   position: absolute;
   right: 4px;
 }
@@ -214,7 +215,8 @@ h3 {
   } 
 
   .article-1 {
-    height: 314px;
+    height: 100%;
+    width: 100%;
   }
 
   .article-right {
@@ -223,11 +225,7 @@ h3 {
     width: 30%;
     height: 314px;
   }
-  
-  .article-2 .article-3 {
-    width: 100%;
-  }
-  
+
   .article-2 h3 {
     font-size: medium;
   }
@@ -246,16 +244,42 @@ h3 {
 
 @media (min-width: 1024px) {
   .cover {
-    height: 529px;
+    height: 514px;
   }
 
-  .cover-story {
-    height: 521px;
+  .article-left {
+    width: 70%;
+    height: 100%;
+    will-change: background-color;
+    z-index: 2;
   }
 
-  .article-2,
+  .article-right {
+    padding: 0%;
+    margin: 0%;
+    width: 30%;
+    height:100%;
+  }
+
+  .article-1 {
+    height: 100%;
+  }
+
+  .article-2{
+    height:50%;
+  }
+
   .article-3 {
-    height: 256px;
+    height: 260px;
+  }
+ 
+  .article-left h3 a{
+    text-align: justify;
+    font-size: 41px;
+  }
+  
+  .img-info {
+    font-size: 10px;
   }
 }
 
