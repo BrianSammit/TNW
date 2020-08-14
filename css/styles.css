@@ -202,27 +202,40 @@ h3 {
 
 @media (min-width: 768px) {
   .cover {
+    width: 100%;
     flex-direction: row;
-  }
+  } 
 
-  .article-1 {
+  .article-left {
+    margin: 0px;
+    padding: 0%;
     width: 70%;
     height: 314px;
-    margin: 0 10px;
+  } 
+
+  .article-1 {
+    height: 314px;
   }
 
-  .article-aside {
+  .article-right {
+    margin: 0px 0px;
+    padding: 0px;
     width: 30%;
-    height: 306px;
+    height: 314px;
   }
-
+  
+  .article-2 .article-3 {
+    width: 100%;
+  }
+  
   .article-2 h3 {
     font-size: medium;
   }
 
-  .article-2 .img-info {
+  .article-2 .img-info{
     display: none;
   }
+  
 }
 
 /*
