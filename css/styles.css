@@ -134,7 +134,7 @@ nav {
   background-position: 50%;
 }
 
-.top{
+.top {
   justify-content: space-between;
   flex-direction: row;
   visibility: hidden;
@@ -213,14 +213,14 @@ h3 {
   .cover {
     width: 100%;
     flex-direction: row;
-  } 
+  }
 
   .article-left {
-    margin: 0px;
+    margin: 0%;
     padding: 0%;
     width: 70%;
     height: 314px;
-  } 
+  }
 
   .article-1 {
     height: 100%;
@@ -228,8 +228,8 @@ h3 {
   }
 
   .article-right {
-    margin: 0px 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     width: 30%;
     height: 314px;
   }
@@ -238,10 +238,9 @@ h3 {
     font-size: medium;
   }
 
-  .article-2 .img-info{
+  .article-2 .img-info {
     display: none;
   }
-  
 }
 
 /*
@@ -255,13 +254,13 @@ h3 {
     height: 514px;
   }
 
-  .cover-story.article-1{
+  .cover-story.article-1 {
     background: linear-gradient(to bottom right, #c09, #f42 85%);
     background-size: contain;
     margin-left: initial;
     background-position: 50%;
   }
-  
+
   .top {
     visibility: visible;
   }
@@ -283,14 +282,14 @@ h3 {
     position: sticky;
     color: white;
   }
-  
+
   .article-left {
     width: 70%;
     height: 100%;
     will-change: background-color;
   }
 
-  .article-left h3{
+  .article-left h3 {
     font-size: 40px;
   }
 
@@ -306,19 +305,19 @@ h3 {
     height: 100%;
   }
 
-  .article-2{
-    height:50%;
+  .article-2 {
+    height: 50%;
   }
 
   .article-3 {
     height: 49%;
   }
- 
-  .article-left h3 a{
+
+  .article-left h3 a {
     text-align: justify;
     font-size: 41px;
   }
-  
+
   .img-info {
     font-size: 10px;
   }
