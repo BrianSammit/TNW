@@ -14,7 +14,7 @@ The project consists of creating a responsive website of The Next Web that chang
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/BrianSammit/TNW/e576cd56dd58f8b8cb904cb9729af224e2c9c78d/index.html)
+[Live Demo Link](https://rawcdn.githack.com/BrianSammit/TNW/d37ec60913bfc850f4cc957795d6b378d747721c/index.html)
 
 ## Authors
 
