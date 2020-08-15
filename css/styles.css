@@ -1,0 +1,1189 @@
+@import url(menu.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (min-width: 1440px) {
+  main {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+/*
+========================================
+    nav bar size movile
+========================================
+*/
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 54px;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 20;
+}
+
+.logo {
+  width: 106px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+}
+
+.logo img {
+  position: sticky;
+  width: 106px;
+  height: 50px;
+  padding: 16px 20px;
+  color: white;
+  z-index: 30;
+}
+
+.nav-message {
+  position: fixed;
+  top: 53px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: rgb(255, 221, 51);
+  text-decoration: none;
+  width: 100vw;
+  height: 55px;
+  padding: 20px 25px;
+  line-height: 15px;
+  color: black;
+  z-index: 10;
+}
+
+/*
+========================================
+    nav bar size tablet
+========================================
+*/
+
+@media (min-width: 768px) {
+  nav {
+    top: 32px;
+  }
+
+  .nav-message {
+    top: 85px;
+  }
+
+  .links-2 {
+    display: none;
+  }
+
+  .link-3 ul {
+    display: flex;
+  }
+
+  .link-3-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/*
+========================================
+    nav bar size desktop
+========================================
+*/
+
+@media (min-width: 1024px) {
+  .nav-message {
+    text-align: start;
+    height: 30px;
+    padding: 10px 20px;
+  }
+}
+
+/*
+========================================
+    header
+========================================
+*/
+
+.cover {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.cover-story {
+  margin: auto;
+  margin-bottom: 5px;
+  position: relative;
+  width: 96%;
+  height: 155px;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.top {
+  justify-content: space-between;
+  flex-direction: row;
+  visibility: hidden;
+  width: 100%;
+  height: 49%;
+}
+
+.inner {
+  font-family: sans-serif;
+  bottom: 4px;
+  left: 4px;
+  padding: 14px 8px;
+  position: absolute;
+  right: 4px;
+}
+
+.img-info {
+  color: white;
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.space {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cover-story span {
+  color: white;
+}
+
+.cover-story a {
+  color: white;
+  text-decoration: none;
+}
+
+.cover-story::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.fa-share-alt {
+  color: white;
+}
+
+.article-1 {
+  background-image: url(../img/Amazon.jpg);
+}
+
+.article-2 {
+  background-image: url(../img/weed.jpg);
+}
+
+.article-3 {
+  background-image: url(../img/robot.jpg);
+}
+
+/*
+========================================
+    header size tablet
+========================================
+*/
+
+@media (min-width: 768px) {
+  .cover {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .article-left {
+    margin: 0%;
+    padding: 0%;
+    width: 70%;
+    height: 314px;
+  }
+
+  .article-1 {
+    height: 100%;
+    width: 100%;
+  }
+
+  .article-right {
+    margin: 0%;
+    padding: 0%;
+    width: 30%;
+    height: 314px;
+  }
+
+  .article-2 h3 {
+    font-size: medium;
+  }
+
+  .article-2 .img-info {
+    display: none;
+  }
+}
+
+/*
+========================================
+    header size desktop
+========================================
+*/
+
+@media (min-width: 1024px) {
+  .cover {
+    height: 514px;
+  }
+
+  .cover-story.article-1 {
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    background-size: contain;
+    margin-left: initial;
+    background-position: 50%;
+  }
+
+  .top {
+    visibility: visible;
+  }
+
+  .logo-2 a img {
+    width: 110%;
+    padding: 20px;
+    position: sticky;
+    color: white;
+    z-index: 30;
+    justify-content: flex-start;
+  }
+
+  .date {
+    justify-content: flex-end;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    position: sticky;
+    color: white;
+  }
+
+  .article-left {
+    width: 70%;
+    height: 100%;
+    will-change: background-color;
+  }
+
+  .article-left h3 {
+    font-size: 40px;
+  }
+
+  .article-right {
+    padding: 0%;
+    margin: 0%;
+    width: 30%;
+    height: 100%;
+  }
+
+  .article-1 {
+    padding-bottom: 0%;
+    height: 100%;
+  }
+
+  .article-2 {
+    height: 50%;
+  }
+
+  .article-3 {
+    height: 49%;
+  }
+
+  .article-left h3 a {
+    text-align: justify;
+    font-size: 41px;
+  }
+
+  .img-info {
+    font-size: 10px;
+  }
+}
+
+/*
+===========================================================
+      section latest news
+===========================================================
+*/
+
+.wrapper {
+  width: 100%;
+}
+
+h4 {
+  color: orangered;
+  font-size: 28px;
+  margin: 20px 0 15px 20px;
+}
+
+.wrapper ul {
+  list-style: none;
+}
+
+.big-li {
+  width: 98%;
+  height: 72px;
+  margin: auto;
+  margin: 20px 5px 0 5px;
+}
+
+.wrapper img {
+  width: 80px;
+  height: 70px;
+  padding-right: 10px;
+}
+
+.container-latest-img {
+  margin-right: 10px;
+  float: left;
+  width: 72px;
+  height: 72px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.img-1 {
+  background-image: url(../img/ibm.jpg);
+}
+
+.img-2 {
+  background-image: url(../img/uber.jpg);
+}
+
+.img-3 {
+  background-image: url(../img/mozilla.png);
+}
+
+.img-4 {
+  background-image: url(../img/Mi.jpg);
+}
+
+.img-5 {
+  background-image: url(../img/lucid.jpg);
+}
+
+.img-6 {
+  background-image: url(../img/google.png);
+}
+
+.img-7 {
+  background-image: url(../img/corona.gif);
+}
+
+.img-8 {
+  background-image: url(../img/ban.jpg);
+}
+
+.info-latest {
+  margin-left: 10px;
+}
+
+h5 {
+  font-size: 14px;
+  color: black;
+}
+
+.container-latest li {
+  font-size: 12px;
+}
+
+.container-latest a {
+  color: #aaaa;
+  text-decoration: none;
+}
+
+.deals a {
+  color: orangered;
+  text-decoration: none;
+  display: block;
+  margin: 10px 20px;
+}
+
+/*
+========================================
+    latest news size tablet
+========================================
+*/
+
+@media (min-width: 768px) {
+  .wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-latest {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .big-li {
+    width: 229px;
+    height: 199px;
+  }
+
+  .container-latest-img {
+    width: 100%;
+    height: 114px;
+  }
+}
+
+/*
+========================================
+    latest news size desktop
+========================================
+*/
+@media (min-width: 1024px) {
+  .deals div {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .deals a {
+    padding: 0 10px;
+    margin: 0;
+    border-left: 1px solid orangered;
+  }
+}
+
+@media (min-width: 1440px) {
+  .deals {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper li {
+    width: 270px;
+    height: 295px;
+    margin: 8px;
+  }
+
+  .container-latest {
+    height: auto;
+  }
+
+  .info-latest li {
+    height: auto;
+    width: auto;
+  }
+}
+
+/*
+===========================================================
+      section sells
+===========================================================
+*/
+.sell-none {
+  display: none;
+}
+
+.sell {
+  position: relative;
+  width: 90%;
+  height: 230px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.sell a {
+  text-decoration: none;
+}
+
+.glove {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.v {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.pay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.sell h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 10px 16px 10px 84px;
+  background-color: orangered;
+}
+
+.sell .price {
+  background-color: rgba(255, 68, 34, 0.08);
+}
+
+.sell .price-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: black;
+  padding: 10px 16px 5px 84px;
+}
+
+.sell .series {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0 16px 10px 84px;
+}
+
+.investment {
+  flex-direction: column;
+  width: 100%;
+  height: 82px;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 68, 0, 0.4);
+}
+
+.investment a {
+  padding: 5px 0;
+}
+
+.investment span {
+  padding: 10px;
+  color: #555;
+  font-size: 13px;
+}
+
+.head-line a {
+  width: 100%;
+  height: 50px;
+  font-size: 13px;
+  color: #555;
+  padding: 5px 0;
+}
+
+.legal-footer span {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 385px;
+  height: 19px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.sell p {
+  padding: 10px 16px 16px;
+}
+
+.img-info a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  padding-right: 5px;
+}
+
+.icons-ul-footer a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 3px;
+  font-size: 16px;
+}
+
+.links-ul a {
+  font-size: 13px;
+  color: #aaa;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.sell p a {
+  font-size: 12px;
+  color: #555;
+}
+
+.sell p a span {
+  color: #aaa;
+}
+
+/*
+===========================================================
+      section sells size tablet
+===========================================================
+*/
+
+@media (min-width: 768px) {
+  .sells {
+    display: flex;
+  }
+
+  .sell {
+    display: flex;
+    flex-wrap: wrap;
+    width: 229px;
+    margin: 0 0 0 10px;
+  }
+
+  .sell a {
+    width: 100%;
+  }
+}
+
+/*
+===========================================================
+      section sells size desktop
+===========================================================
+*/
+
+@media (min-width: 768px) {
+  .sell-none {
+    display: none;
+  }
+
+  .sell {
+    display: flex;
+    flex-wrap: wrap;
+    width: 277px;
+    margin: 0 0 0 10px;
+  }
+
+  .sell a {
+    width: 100%;
+  }
+}
+
+/*
+========================================================
+    section popular
+========================================================
+*/
+
+.fork-div {
+  margin-top: 80px;
+}
+
+.fork {
+  width: 100%;
+  height: 703px;
+  padding: 8px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.fork ul {
+  list-style: none;
+}
+
+.fork h2 {
+  padding-bottom: 20px;
+}
+
+.fork h2 a {
+  text-decoration: none;
+  color: orangered;
+  font-size: 28px;
+}
+
+.popular::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popular {
+  position: relative;
+  width: 100%;
+  height: 288px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popular-header {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  padding: 14px;
+}
+
+.popular-header h5 {
+  font-size: 13px;
+  color: white;
+}
+
+.popular-header h3 a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.img-info li {
+  padding-top: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.article-latest {
+  position: relative;
+  width: 100%;
+}
+
+.header-article {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 68, 34, 0.06);
+  width: 80%;
+  height: 96px;
+  color: orangered;
+  padding: 15px;
+}
+
+.header-article h2 {
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.header-article h3 {
+  font-size: 14px;
+}
+
+.article-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 96px;
+  height: 96px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.head-line h4 {
+  margin: 0;
+}
+
+.head-line {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: disc;
+  color: orangered;
+  line-height: 15px;
+  margin-left: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 0 6px 14px;
+}
+
+.popular-img-1 {
+  background-image: url(../img/bitcoin.jpg);
+}
+
+.article-img-1 {
+  background-image: url(../img/bitcoin.jpg);
+}
+
+.popular-img-2 {
+  background-image: url(../img/google.png);
+}
+
+.article-img-2 {
+  background-image: url(../img/twitter.png);
+}
+
+.popular-img-3 {
+  background-image: url(../img/Ariel.jpg);
+}
+
+.article-img-3 {
+  background-image: url(../img/Mi.jpg);
+}
+
+.popular-img-4 {
+  background-image: url(../img/ibm.jpg);
+}
+
+.article-img-4 {
+  background-image: url(../img/design.jpg);
+}
+
+.popular-img-5 {
+  background-image: url(../img/handshake.png);
+}
+
+.article-img-5 {
+  background-image: url(../img/a-female.jpg);
+}
+
+.popular-img-6 {
+  background-image: url(../img/mens.jpg);
+}
+
+.article-img-6 {
+  background-image: url(../img/Featured.jpg);
+}
+
+.article-img-7 {
+  background-image: url(../img/new-zealand.jpg);
+}
+
+.popular-img-8 {
+  background-image: url(../img/Shift.png);
+}
+
+.article-img-8 {
+  background-image: url(../img/BMW.png);
+}
+
+.popular-img-9 {
+  background-image: url(../img/Screenshot.png);
+}
+
+.article-img-9 {
+  background-image: url(../img/Mulan.jpg);
+}
+
+/*
+========================================================
+    section popular size tablet
+========================================================
+*/
+
+@media (min-width: 768px) {
+  .fork-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fork {
+    width: 374px;
+    margin: 0;
+  }
+
+  .fork div {
+    width: 320px;
+  }
+
+  .article-latest div {
+    width: 96px;
+    height: 96px;
+  }
+
+  .header-article {
+    width: 230px;
+  }
+
+  .article-latest {
+    width: 320px;
+  }
+}
+
+/*
+========================================================
+    section popular size desktop
+========================================================
+*/
+
+@media (min-width: 1024px) {
+  .fork {
+    width: 336px;
+    height: auto;
+    margin: 0;
+  }
+
+  .popular {
+    width: 312px;
+    height: 234px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fork {
+    width: 370px;
+    height: auto;
+    margin: 0 5px;
+  }
+
+  .fork div {
+    width: 354px;
+  }
+
+  .article-latest {
+    width: 354px;
+  }
+
+  .article-latest div {
+    width: 96px;
+    height: 96px;
+  }
+
+  .article-latest header {
+    width: 255px;
+  }
+}
+
+/*
+========================================================
+    section deals
+========================================================
+*/
+
+.title-latest {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.latest-deals {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.latest-deals h4 {
+  margin: 0;
+}
+
+.latest-deals h2 a {
+  text-decoration: none;
+  font-size: 14px;
+  color: orangered;
+}
+
+.latest-deals ul {
+  list-style: none;
+}
+
+.latest-deals-img-1 {
+  background-image: url(../img/sale.jpg);
+}
+
+.latest-deals-img-2 {
+  background-image: url(../img/sale-1.jpg);
+}
+
+.latest-deals-img-3 {
+  background-image: url(../img/sale-2.jpg);
+}
+
+.latest-deals-img-4 {
+  background-image: url(../img/sale-3.jpg);
+}
+
+.latest-deals-img-5 {
+  background-image: url(../img/sale-4.jpg);
+}
+
+.latest-deals-img-6 {
+  background-image: url(../img/product.jpg);
+}
+
+.latest-deals-img-7 {
+  background-image: url(../img/sale-5.jpg);
+}
+
+.latest-deals-img-8 {
+  background-image: url(../img/sale-6.jpg);
+}
+
+.deals-ul li {
+  padding: 10px 5px 0 0;
+}
+
+.container-latest .ul-a-1 {
+  color: #555;
+  font-size: 14px;
+}
+
+.container-latest .ul-a {
+  color: #aaa;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+/*
+========================================================
+    section deals size tablet
+========================================================
+*/
+
+@media (min-width: 768px) {
+  .latest-deals ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .big-li {
+    width: 229px;
+    height: 248px;
+    margin: 0 12px 10px;
+  }
+
+  .container-latest-img {
+    width: 100%;
+    height: 170px;
+  }
+
+  .deals-ul {
+    display: flex;
+    height: 20px;
+  }
+
+  .title-latest {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+/*
+========================================================
+    section deals size desktop
+========================================================
+*/
+
+@media (min-width: 1024px) {
+  .title-latest {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .latest-deals li {
+    width: 270px;
+    height: auto;
+    margin: 8px;
+  }
+
+  .deals-ul li {
+    width: auto;
+  }
+}
+
+/*
+========================================================
+    Footer
+========================================================
+*/
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.icons-wrapper {
+  width: 100%;
+  height: 161px;
+  padding: 35px 0;
+  background-color: rgb(19, 19, 19);
+}
+
+.icons-footer {
+  width: 100%;
+  height: 91px;
+  padding: 0 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-footer ul {
+  list-style: none;
+}
+
+.icons-ul-footer {
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.icons-ul-footer li {
+  display: inline;
+  line-height: 35px;
+}
+
+.legal-footer {
+  width: 100%;
+  height: 121px;
+  padding: 32px 0;
+  background-color: black;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 10px;
+}
+
+.legal-footer img {
+  height: 9px;
+}
+
+.disabled {
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.links-ul {
+  text-align: center;
+}
+
+.links-ul li {
+  display: inline;
+  text-align: center;
+}
+
+/*
+========================================================
+    Footer size tablet
+========================================================
+*/
+
+@media (min-width: 768px) {
+  .legal-footer {
+    display: inline-block;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .disabled {
+    background-color: #3b78bd;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
+  }
+}
