@@ -926,12 +926,6 @@ h5 {
 */
 
 @media (min-width: 1024px) {
-  .fork {
-    width: 336px;
-    height: auto;
-    margin: 0;
-  }
-
   .popular {
     width: 312px;
     height: 234px;
